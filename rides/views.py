@@ -230,7 +230,7 @@ def confirm(request, ride_id):
     send_mail(
       'Ride Confirmed',
       'Your ride has been confirmed by driver' + ride.driver.driverProfile.real_name,
-      'rover_admin@rover.co',
+      '#',
       email_list,
       fail_silently=True,
     )
